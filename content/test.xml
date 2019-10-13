@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE bindings [
+  <!ENTITY % baseMenuOverlayDTD SYSTEM "chrome://messenger/locale/baseMenuOverlay.dtd">
+  %baseMenuOverlayDTD;
+]>
+
+<bindings
+  xmlns="http://www.mozilla.org/xbl"
+  xmlns:xbl="http://www.mozilla.org/xbl"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+>
+  <!-- Original helpMenu implementation found in omi.ja/chrome/messenger/content/messenger/mailWindowOverlay.xul -->
+  <binding id="helpMenu">
+    <content>
+      <xul:label value="&helpMenu.label;" accesskey="&helpMenu.accesskey;" />
+
+      <xul:menupopup position="after_end">
+        <xul:menuitem
+          label="Hello, World!"
+          oncommand="alert('Hello, World!')"
+        />
+      </xul:menupopup>
+
+      <children />
+    </content>
+  </binding>
+</bindings>
