@@ -15,13 +15,10 @@ which is found on line 3029 of `omi.ja/chrome/messenger/content/messenger/mailWi
 
 ## Install
 
-Requires Thunderbird 60.
+Requires Thunderbird 68.
 
 - Clone the repo
-- Thunderbird > _Tools_ > _Add-ons_
-- Select _Install add-on from file_ from dropdown
-- Select `test.xpi` from repo
-
-## Build
-
-- Zip up the contents of the repo, excluding the `.git` folder, the `test.xpi` file and the `README.md`. E.g. `zip -r test.xpi * -x ".git" -x "README.md" -x "test.xpi"`
+- In Thunderbird select _Tools_ > _Add-ons_
+- Select _Debug Add-ons_ from dropdown
+- Click _Load Temproray Add-on..._
+- Select `manifest.json` from repo

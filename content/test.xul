@@ -2,5 +2,5 @@
 <?xml-stylesheet type="text/css" href="./bindings.css" ?>
 
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <script type="application/javascript" src="./overlay.js"/>
+  <script type="application/javascript" src="./overlay.js" />
 </overlay>

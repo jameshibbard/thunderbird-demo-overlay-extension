@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "applications": {
+    "gecko": {
+      "id": "test-extension@example.com",
+      "strict_min_version": "68.0"
+    }
+  },
+  "name": "Test Extension",
+  "description": "A test overlay extension that should work on TB68+",
+  "version": "2.0",
+  "legacy": {
+    "type": "xul"
+  }
+}
