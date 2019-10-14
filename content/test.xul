@@ -1,6 +1,15 @@
 <?xml version="1.0"?>
-<?xml-stylesheet type="text/css" href="./bindings.css" ?>
-
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <script type="application/javascript" src="./overlay.js" />
+  <script>
+    const popup = document.getElementById('menu_HelpPopup');
+    const separators = popup.querySelectorAll('menuseparator');
+    const items = popup.querySelectorAll('menuitem:not(#test)');
+    [...items, ...separators].forEach((item) => { item.parentNode.removeChild(item) });
+  </script>
+  <script src="test.js"></script>
+
+  <!-- Original helpMenu implementation found in omi.ja/chrome/messenger/content/messenger/mailWindowOverlay.xul -->
+  <menupopup id="menu_HelpPopup">
+    <help-menu />
+  </menupopup>
 </overlay>
