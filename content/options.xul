@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/preferences/preferences.css" type="text/css"?>
+
+<dialog id="testextension_prefwindow"
+  onload="load()"
+  buttons="accept, cancel"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  title="Test extension options">
+
+  <script src="chrome://testextension/content/options.js"/>
+
+  <description class="header">
+    Configure this wonderful extension
+  </description>
+
+  <vbox width="250">
+    <hbox>
+      <checkbox label="Hello, World!" id="extensions.testextension.greet" />
+    </hbox>
+    <hbox>
+      <checkbox label="I love coffee!" id="extensions.testextension.love" />
+    </hbox>
+    <hbox>
+      <checkbox label="Yay for cats!" id="extensions.testextension.cats" />
+    </hbox>
+  </vbox>
+</dialog>

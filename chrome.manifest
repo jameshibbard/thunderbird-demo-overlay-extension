@@ -1,2 +1,2 @@
-content  test-extension  content/
-overlay  chrome://messenger/content/messenger.xul  chrome://test-extension/content/test.xul
+content  testextension  content/
+overlay  chrome://messenger/content/messenger.xul  chrome://testextension/content/test.xul
