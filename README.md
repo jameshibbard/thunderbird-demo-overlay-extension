@@ -1,8 +1,6 @@
 # Demo Thunderbird Overlay Extension
 
-This extension uses a custom element to alter the behaviour of the _Help_ menu item in Thunderbird’s menu bar. It replaces its original menu items with a single "Hello, World!" menu item.
-
-Note, the custom element is inaccessible via keyboard (the extension is for demo purposes).
+This extension alters the behaviour of the _Help_ menu item in Thunderbird’s menu bar. It replaces its original menu items with whatever the user has selected in the menu's preferences.
 
 ## Install
 
