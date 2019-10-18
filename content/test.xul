@@ -1,16 +1,12 @@
 <?xml version="1.0"?>
 <overlay id="testextension-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <script>
-    const popup = document.getElementById('menu_HelpPopup');
-    const separators = popup.querySelectorAll('menuseparator');
-    const items = popup.querySelectorAll('menuitem:not(#test)');
-    [...items, ...separators].forEach((item) => { item.parentNode.removeChild(item) });
-  </script>
-
   <script src="test.js"></script>
 
   <!-- Original helpMenu implementation found in omi.ja/chrome/messenger/content/messenger/mailWindowOverlay.xul -->
   <menupopup id="menu_HelpPopup">
-    <help-menu />
+    <menuitem class="testextension" id="greet" label="Hello, World!" oncommand="alert('Hello, World!')" />
+    <menuitem class="testextension" id="love" label="I love coffee!" oncommand="alert('I love coffee!')" />
+    <menuitem class="testextension" id="cats" label="Yay for cats!" oncommand="alert('Yay for cats!')" />
+    <menuitem class="testextension" id="nothing" label="Nothing here..." oncommand="alert('Booo!')" />
   </menupopup>
 </overlay>

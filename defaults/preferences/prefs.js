@@ -1,3 +1,5 @@
-pref("extensions.testextension.greet", true);
-pref("extensions.testextension.love", false);
-pref("extensions.testextension.cats", true);
+/* global pref */
+
+pref('extensions.testextension.greet', true);
+pref('extensions.testextension.love', false);
+pref('extensions.testextension.cats', true);
